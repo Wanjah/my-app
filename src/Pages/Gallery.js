@@ -9,14 +9,23 @@ const Flowers = [
 
 
 export default function Gallery(){
-    const [index, setIndex]=useState(0);
+    let [index, setIndex]=useState(0);
+    const hasNext = index < Flowers.length -1;
+    //const hasPrevious = index > Flowers.length +1;
 
     function Next(){
-        setIndex(index+1);
+        if(hasNext){
+            setIndex(index+1);
+        }else{
+            setIndex(0);
+        }
+        
         
     }
     function Previous(){
-        setIndex(index-1);}
+        setIndex(index-1);
+    }
+        
    
     return(
         <div>

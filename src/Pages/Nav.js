@@ -8,6 +8,7 @@ export default function Nav(){
         <li className="mynav_a"><NavLink to="/home">Home</NavLink></li>
         <li className="mynav_a"><NavLink to="/gallery">Gallery</NavLink></li>
         <li className="mynav_a"><NavLink to="/table">Table</NavLink></li>
+        <li className="mynav_a"><NavLink to="/eg">EG</NavLink></li>
         </ul>
         <Outlet/>
         </>
