@@ -6,4 +6,6 @@ import React from "react";
     imgAlt = "Avatar.Alt"
  }
 
- export default function Avatar({person,size})
+ export default function Avatar({person,size}){
+   
+ }
