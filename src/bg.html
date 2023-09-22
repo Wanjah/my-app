@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Peronal details form</h1>
+    <div>
+      <form class="container">
+        <p>Enter your details below:</p>
+        <!--This form field uses an explicit label-->
+        <p><i>This form field uses an explicit label</i></p>
+        <label for="fname">First Name:</label>
+        <input autocomplete="given-name" type="text" id="fname"><br><br>
+         <!--This form field uses an implicit label-->
+        <p><i>These form fields use implicit labels</i></p>
+        <label>Last Name:
+        <input autocomplete="family-name" type="text" id="lname" name="Last Name"></label><br><br>
+        <label>E-mail:
+        <input autocomplete="email" type="email" id="email" name="email"></label><br><br>
+        <!--Group related labels-->
+        <p><i>Group related form fields are marked up using the fieldset and legend</i></p>
+        <fieldset>
+          <legend>Gender</legend>
+          <label>Male:<input type="radio" value="male" name="male"></label>
+          <label>Female:<input type="radio" value="female" name="female"></label>
+      
+        </fieldset>
+        <label>I'm not a robot:
+        <input type="checkbox" id="ver" name="ver"></label><br><br>
+        <button type="submit" onClick="message()">Submit</button><br><br>
+
+        <div role="button" tabindex="0" aria-label="Click me">ClickMe!</div>
+      </form>
+    </div>
+  <fieldset>
+      <legend>Active</legend>
+      <label for="yes">Yes:</label>​
+      <input type="radio" id="yes" name="active">
+      <label for="no">No:</label>​
+      <input type="radio" id="no" name="active">
+  </fieldset>
+   
+  <!--Email input field-->
+  <label for="email">Email:</label>​
+<input autocomplete="email" type="email" id="email">​​
+</body>
+</html>
